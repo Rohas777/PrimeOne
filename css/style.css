@@ -1,0 +1,556 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@font-face {
+  font-family: "AkzidenzGroteskBQBoldCondensed";
+  src: url("../fonts/AkzidenzGroteskBQBoldCondensed.eot");
+  src: local("☺"), url("../fonts/AkzidenzGroteskBQBoldCondensed.woff") format("woff"), url("../fonts/AkzidenzGroteskBQBoldCondensed.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBQBoldCondensed.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonts/BebasRegular.eot");
+  src: local("☺"), url("../fonts/BebasRegular.woff") format("woff"), url("../fonts/BebasRegular.ttf") format("truetype"), url("../fonts/BebasRegular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 892px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 992.98px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------------------*/
+.header {
+  padding: 29px 0px 33px 0px;
+  background-color: #fff;
+}
+@media (max-width: 767.98px) {
+  .header {
+    padding: 5px 0px 5px 0px;
+  }
+}
+
+.header-top {
+  display: flex;
+  font-size: 0;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .header-top {
+    justify-content: flex-end;
+    padding: 25px 0px 0px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .header-top {
+    padding: 15px 0px 0px 0px;
+  }
+}
+
+.header-top-langs {
+  display: flex;
+  font-size: 0;
+}
+@media (max-width: 767.98px) {
+  .header-top-langs {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.header-top-langs__item {
+  display: block;
+  line-height: 19px;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: Bebas;
+  letter-spacing: 1px;
+  padding: 0 4px;
+  margin: 0px 10px 0px 0px;
+}
+.header-top-langs__item.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.header-top__link {
+  position: relative;
+  z-index: 11;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "AkzidenzGroteskBQBoldCondensed";
+  text-decoration: underline;
+}
+@media (max-width: 479.98px) {
+  .header-top__link {
+    font-size: 13px;
+  }
+}
+
+.header-bottom {
+  margin: -10px 0px 0px 0px;
+  display: flex;
+  font-size: 0;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .header-bottom {
+    margin: -37px 0px 0px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .header-bottom {
+    margin: -27px 0px 0px 0px;
+  }
+}
+
+.header-bottom__column {
+  flex: 0 0 33.333%;
+}
+
+.header-bottom-menu--right .header-bottom-menu-list {
+  margin: 0;
+  display: flex;
+  font-size: 0;
+  justify-content: flex-end;
+  text-align: right;
+}
+.header-bottom-menu--right .header-bottom-menu-list li {
+  margin: 0px 0px 0px 45px !important;
+}
+.header-bottom-menu--right .header-bottom-menu-list li:first-child {
+  margin: 0px 0px 0px 0px;
+}
+.header-bottom-menu--right .header-bottom-menu-list li:last-child {
+  margin: 0px 0px 0px 45px;
+}
+@media (max-width: 892px) {
+  .header-bottom-menu--right .header-bottom-menu-list li {
+    margin: 0px 0px 0px 20px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .header-bottom-menu--right .header-bottom-menu-list {
+    display: block;
+    text-align: left;
+  }
+  .header-bottom-menu--right .header-bottom-menu-list li {
+    margin: 0px 0px 15px 0px !important;
+  }
+  .header-bottom-menu--right .header-bottom-menu-list li:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.header-bottom-menu-list {
+  display: flex;
+  font-size: 0;
+}
+.header-bottom-menu-list li {
+  margin: 0px 45px 0px 0px;
+}
+.header-bottom-menu-list li:last-child {
+  margin: 0px 0px 0px 0px;
+}
+@media (max-width: 892px) {
+  .header-bottom-menu-list li {
+    margin: 0px 20px 0px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .header-bottom-menu-list {
+    display: block;
+  }
+  .header-bottom-menu-list li {
+    margin: 0px 0px 15px 0px !important;
+  }
+  .header-bottom-menu-list li:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.header-bottom-menu__link {
+  font-family: "AkzidenzGroteskBQBoldCondensed";
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+}
+
+.header-logo {
+  position: relative;
+  z-index: 11;
+  display: block;
+  text-align: center;
+}
+
+.header-logo__text {
+  display: block;
+  font-family: Bebas;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  color: #000000;
+}
+@media (max-width: 992.98px) {
+  .header-logo__text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 479.98px) {
+  .header-logo__text {
+    letter-spacing: 5px;
+  }
+}
+
+.header-logo__image {
+  display: inline-block;
+  margin: 13px 0px 22px 0px;
+}
+@media (max-width: 992.98px) {
+  .header-logo__image {
+    margin: 2px 0px 5px 0px;
+  }
+  .header-logo__image img {
+    width: 150px;
+  }
+}
+@media (max-width: 479.98px) {
+  .header-logo__image {
+    margin: 0px 0px 2px 0px;
+  }
+  .header-logo__image img {
+    width: 100px;
+  }
+}
+
+.header-menu__icon {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .header-menu__icon {
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .header-menu__icon span {
+    transition: all 0.3s ease 0s;
+    top: 8px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  .header-menu__icon span:first-child {
+    top: 0;
+  }
+  .header-menu__icon span:last-child {
+    top: auto;
+    bottom: 0;
+  }
+  .header-menu__icon.active span {
+    transform: scale(0);
+  }
+  .header-menu__icon.active span:first-child {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  .header-menu__icon.active span:last-child {
+    transform: rotate(45deg);
+    bottom: 8px;
+  }
+  .header-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    left: -120%;
+    top: 0;
+    background-color: #fff;
+    padding: 65px 10px 0px 10px;
+    transition: all 0.3s ease 0s;
+  }
+  .header-menu.active {
+    left: 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .header-menu__icon {
+    top: 18px;
+  }
+}
+.btn {
+  height: 50px;
+  line-height: 50px;
+  background-color: #000;
+  display: inline-block;
+  padding: 0px 33px;
+  font-size: 15px;
+  font-family: "Bebas";
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+.btn--w {
+  background-color: #fff;
+  color: #000;
+}
+.btn.fw {
+  width: 100%;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.catering {
+  display: flex;
+  font-size: 0;
+  background-color: #000;
+  margin: 0px 0px 75px 0px;
+}
+.catering__column {
+  flex: 0 0 50%;
+}
+@media (max-width: 767.98px) {
+  .catering__column {
+    flex: 1 1 100%;
+  }
+  .catering__column:first-child {
+    display: none;
+  }
+}
+.catering__image {
+  height: 100%;
+}
+
+.catering-body-content {
+  max-width: 305px;
+}
+
+.catering-body {
+  padding: 75px 20px 75px 60px;
+}
+@media (max-width: 892px) {
+  .catering-body {
+    padding: 30px 20px 30px 30px;
+  }
+}
+.catering-body__title {
+  font-family: "AkzidenzGroteskBQBoldCondensed";
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin: 0px 0px 30px 0px;
+}
+@media (max-width: 892px) {
+  .catering-body__title {
+    font-size: 35px;
+    margin: 0px 0px 20px 0px;
+  }
+}
+.catering-body__text {
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  margin: 0px 0px 50px 0px;
+}
+@media (max-width: 892px) {
+  .catering-body__text {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.catering-body-buttons {
+  display: flex;
+  font-size: 0;
+  align-items: center;
+}
+.catering-body-buttons__link {
+  font-family: "Bebas";
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #fffffe;
+  margin: 0px 0px 0px 15px;
+  letter-spacing: 0.1em;
+}
+
+.cards {
+  margin: 0px 0px 75px 0px;
+}
+
+.cards-body-content {
+  max-width: 190px;
+  padding: 0px 0px 0px 5px;
+}
+
+.cards-body {
+  display: flex;
+  font-size: 0;
+}
+.cards-body__column {
+  flex: 0 0 25%;
+}
+.cards-body__image {
+  height: 225px;
+  margin: 0px 0px 20px 0px;
+}
+.cards-body__title {
+  font-family: "AkzidenzGroteskBQBoldCondensed";
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0px 0px 30px 0px;
+}
+.cards-body__text {
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0px 0px 30px 0px;
+}
+.cards-body__button {
+  margin: 0px 0px 25px 0px;
+}
+.cards-body__link {
+  font-family: "Bebas";
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.choose {
+  display: flex;
+  font-size: 0;
+  background-color: #000;
+  margin: 0px 0px 50px 0px;
+}
+.choose__column {
+  flex: 0 0 50%;
+}
+.choose__title {
+  text-align: right;
+  font-family: "AkzidenzGroteskBQBoldCondensed";
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 55px 60px 55px 0px;
+}
+.choose__image {
+  height: 100%;
+}
